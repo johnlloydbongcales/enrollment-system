@@ -24,17 +24,7 @@
       <form action="" method="post" onsubmit="return validateForm()">
          <img src="img/logo.jpg" alt="">
          <h3>NEMSU Pre-Enrollment System</h3>
-         <?php
-         if (isset($error)) {
-            foreach ($error as $error) {
-               echo '<span class="error-msg">' . $error . ' </span>';
-            };
-         } elseif (isset($success)) {
-            foreach ($success as $success) {
-               echo '<span class="success-msg">' . $success . ' </span>';
-            };
-         };
-         ?>
+
          <input type="text" name="fname" required placeholder="First Name" id="firstName">
          <input type="text" name="mname" required placeholder="Middle Name">
          <input type="text" name="lname" required placeholder="Last Name" id="lastName">
